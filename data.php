@@ -15,7 +15,7 @@ $result = $mysqli -> query($sql);
 // If 0 record found
 if ($result->num_rows == 0) {
 $url = 'https://api.openweathermap.org/data/2.5/weather?q='.$_GET['city'].' &appid=9936c29832144d68fa88d1b5d0293cf5&units=metric';
-// Get data from openweathermap and store in JSON object
+// Get data from openweathermap and store in JSON objec
 $data = file_get_contents($url);
 $json = json_decode($data, true);
 // Fetch required fields
